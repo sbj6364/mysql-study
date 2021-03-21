@@ -1,7 +1,7 @@
 ## Assignment#3 from Professor Kim
   
-
-
+  
+  
 2. **Write the following queries in SQL, using the university schema. I suggest you actually run these queries on a database, using the sample data.**
 
 ~~~mysql
@@ -13,7 +13,7 @@ show table status;
 show tables;
 ~~~
 
-
+  
 
 (1)  Find the titles of courses in the Comp. Sci. department that have 3 credits.
 
@@ -21,7 +21,7 @@ show tables;
 select title from course
 where dept_name = 'Comp. Sci.' and credits = 3;
 ```
-
+  
 
 
 (2)  Find the IDs of all students who were taught by an instructor named Einstein; make sure there are no duplicates in the result.
