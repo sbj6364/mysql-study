@@ -1,6 +1,5 @@
 ## Assignment#3 from Professor Kim
----  
-
+  
 
 
 2. **Write the following queries in SQL, using the university schema. I suggest you actually run these queries on a database, using the sample data.**
