@@ -39,8 +39,6 @@ where instructor.name = 'Einstein';
 (3)  Find the highest salary of any instructor.
 
 ~~~mysql
-select * from instructor;
-
 select max(salary)
 from instructor;
 ~~~
