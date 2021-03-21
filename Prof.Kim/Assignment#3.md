@@ -14,7 +14,7 @@ show tables;
 ~~~
 
   
-
+<br>
 (1)  Find the titles of courses in the Comp. Sci. department that have 3 credits.
 
 ```mysql
@@ -23,7 +23,7 @@ where dept_name = 'Comp. Sci.' and credits = 3;
 ```
   
 
-
+<br>
 (2)  Find the IDs of all students who were taught by an instructor named Einstein; make sure there are no duplicates in the result.
 
 ~~~mysql
@@ -35,7 +35,7 @@ where instructor.name = 'Einstein';
 ~~~
 
 
-
+<br>
 (3)  Find the highest salary of any instructor.
 
 ~~~mysql
@@ -46,7 +46,7 @@ from instructor;
 ~~~
 
 
-
+<br>
 (4)  Find all instructors earning the highest salary (there may be more than one with the same salary).
 
 ~~~mysql
@@ -59,7 +59,7 @@ where salary = (
 ~~~
 
 
-
+<br>
 (5)  Find the enrollment of each section that was offered in Autumn 2009.
 
 ~~~mysql
@@ -69,7 +69,7 @@ where semester = 'Fall' and year = 2009 group by course_id, sec_id;
 ~~~
 
 
-
+<br>
 (6)  Find the maximum enrollment, across all sections, in Autumn 2009.
 
 ~~~mysql
@@ -81,7 +81,7 @@ from(
 ~~~
 
 
-
+<br>
 (7)  Find the sections that had the maximum enrollment in Autumn 2009.
 
 ~~~mysql
@@ -98,10 +98,10 @@ where enrollment >= all(
 
 
 
-
-
+<br>
+<br>
 3. **Write the following inserts, deletes or updates in SQL, using the university schema.**
-
+<br>
 (1)  Increase the salary of each instructor in the Comp. Sci. department by 10%.
 
 ~~~mysql
@@ -111,7 +111,7 @@ where dept_name = 'Comp. Sci.';
 ~~~
 
 
-
+<br>
 (2)  Delete all courses that have never been offered (that is, do not occur in the section relation).
 
 ~~~mysql
@@ -126,7 +126,7 @@ set foreign_key_checks = 1; # Reset
 ~~~
 
 
-
+<br>
 (3)  Insert every student whose tot cred attribute is greater than 100 as an instructor in the same department, with a salary of $10,000.
 
 ~~~mysql
