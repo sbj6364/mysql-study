@@ -1,6 +1,6 @@
-# Animal Shelter Database
+# SELECT
 
-> Basic example of database
+> practice with [Animal Shelter Database], basic example of database
 
 
 
