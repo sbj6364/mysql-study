@@ -70,23 +70,23 @@
 
 3-33) 주문이 있는 고객의 이름과 주소를 보이시오.
 
-3-34) 다음과 같은 속성을 가진 NewBook 테이블을 생성하시오. 정수형은 INTEGER를 사용하며 문자형은 가변형 문자타입인 VARCHAR을 사용한다.
-	bookid(도서번호)-INTEGER
-	bookname(도서이름)-VARCHAR(20)
-	publisher(출판사)-VARCHAR(20)
+3-34) 다음과 같은 속성을 가진 NewBook 테이블을 생성하시오. 정수형은 INTEGER를 사용하며 문자형은 가변형 문자타입인 VARCHAR을 사용한다.  
+	bookid(도서번호)-INTEGER  
+	bookname(도서이름)-VARCHAR(20)  
+	publisher(출판사)-VARCHAR(20)  
 	price(가격)-INTEGER
 
-3-35) 다음과 같은 속성을 가진 NewCustomer 테이블을 생성하시오.
-	custid(고객번호) - INTEGER, 기본키
-	name(이름) – VARCHAR(40)
-	address(주소) – VARCHAR(40)
+3-35) 다음과 같은 속성을 가진 NewCustomer 테이블을 생성하시오.  
+	custid(고객번호) - INTEGER, 기본키  
+	name(이름) – VARCHAR(40)  
+	address(주소) – VARCHAR(40)  
 	phone(전화번호) – VARCHAR(30)
 
-3-36) 다음과 같은 속성을 가진 NewOrders 테이블을 생성하시오.
-	orderid(주문번호) - INTEGER, 기본키
-	custid(고객번호) - INTEGER, NOT NULL 제약조건, 외래키(NewCustomer.custid, 연쇄삭제)
-	bookid(도서번호) - INTEGER, NOT NULL 제약조건
-	saleprice(판매가격) - INTEGER
+3-36) 다음과 같은 속성을 가진 NewOrders 테이블을 생성하시오.  
+	orderid(주문번호) - INTEGER, 기본키  
+	custid(고객번호) - INTEGER, NOT NULL 제약조건, 외래키(NewCustomer.custid, 연쇄삭제)  
+	bookid(도서번호) - INTEGER, NOT NULL 제약조건  
+	saleprice(판매가격) - INTEGER  
 	orderdate(판매일자) – DATE
 
 3-37) NewBook 테이블에 VARCHAR(13)의 자료형을 가진 isbn 속성을 추가하시오.
@@ -107,8 +107,7 @@
 
 3-45) Book 테이블에 새로운 도서 ‘스포츠 의학’을 삽입하시오. 스포츠 의학은 한솔의학서적에서 출간했으며 가격은 미정이다.
 
-3-46) 수입도서 목록(Imported_book)을 Book 테이블에 모두 삽입하시오.
-                (Imported_book 테이블은 스크립트 Book 테이블과 같이 이미 만들어져 있음)
+3-46) 수입도서 목록(Imported_book)을 Book 테이블에 모두 삽입하시오. (Imported_book 테이블은 스크립트 Book 테이블과 같이 이미 만들어져 있음)
 
 3-47) Customer 테이블에서 고객번호가 5인 고객의 주소를 ‘대한민국 부산’으로 변경하시오.
 
