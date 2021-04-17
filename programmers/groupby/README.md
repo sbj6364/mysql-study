@@ -1,4 +1,4 @@
-# Aggregations (SUM, MAX, MIN)
+# GROUP BY (SUM, MAX, MIN)
 
 > practice with [Animal Shelter Database], basic example of database
 
