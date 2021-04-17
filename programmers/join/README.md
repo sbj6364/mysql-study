@@ -111,28 +111,46 @@ SQL문을 실행하면 다음과 같이 나와야 합니다.
 
 
 
-## 3. 동물 수 구하기
+## 3. 오랜 기간 보호한 동물(1)
 
-> 동물 보호소에 동물이 몇 마리 들어왔는지 조회하는 SQL 문을 작성해주세요.
+> 아직 입양을 못 간 동물 중, 가장 오래 보호소에 있었던 동물 3마리의 이름과 보호 시작일을 조회하는 SQL문을 작성해주세요. 이때 결과는 보호 시작일 순으로 조회해야 합니다.
 
 ##### 예시
 
-예를 들어 `ANIMAL_INS` 테이블이 다음과 같다면
+예를 들어, `ANIMAL_INS` 테이블과 `ANIMAL_OUTS` 테이블이 다음과 같다면
 
-| ANIMAL_ID | ANIMAL_TYPE | DATETIME            | INTAKE_CONDITION | NAME     | SEX_UPON_INTAKE |
-| --------- | ----------- | ------------------- | ---------------- | -------- | --------------- |
-| A399552   | Dog         | 2013-10-14 15:38:00 | Normal           | Jack     | Neutered Male   |
-| A379998   | Dog         | 2013-10-23 11:42:00 | Normal           | Disciple | Intact Male     |
-| A370852   | Dog         | 2013-11-03 15:04:00 | Normal           | Katie    | Spayed Female   |
-| A403564   | Dog         | 2013-11-18 17:03:00 | Normal           | Anna     | Spayed Female   |
+```
+ANIMAL_INS
+```
 
-동물 보호소에 들어온 동물은 4마리입니다. 따라서 SQL문을 실행하면 다음과 같이 나와야 합니다.
+| ANIMAL_ID | ANIMAL_TYPE | DATETIME            | INTAKE_CONDITION | NAME   | SEX_UPON_INTAKE |
+| --------- | ----------- | ------------------- | ---------------- | ------ | --------------- |
+| A354597   | Cat         | 2014-05-02 12:16:00 | Normal           | Ariel  | Spayed Female   |
+| A373687   | Dog         | 2014-03-20 12:31:00 | Normal           | Rosie  | Spayed Female   |
+| A412697   | Dog         | 2016-01-03 16:25:00 | Normal           | Jackie | Neutered Male   |
+| A413789   | Dog         | 2016-04-19 13:28:00 | Normal           | Benji  | Spayed Female   |
+| A414198   | Dog         | 2015-01-29 15:01:00 | Normal           | Shelly | Spayed Female   |
+| A368930   | Dog         | 2014-06-08 13:20:00 | Normal           |        | Spayed Female   |
 
-| count |
-| ----- |
-| 4     |
+```
+ANIMAL_OUTS
+```
 
+| ANIMAL_ID | ANIMAL_TYPE | DATETIME            | NAME  | SEX_UPON_OUTCOME |
+| --------- | ----------- | ------------------- | ----- | ---------------- |
+| A354597   | Cat         | 2014-05-02 12:16:00 | Ariel | Spayed Female    |
+| A373687   | Dog         | 2014-03-20 12:31:00 | Rosie | Spayed Female    |
+| A368930   | Dog         | 2014-06-13 15:52:00 |       | Spayed Female    |
 
+SQL문을 실행하면 다음과 같이 나와야 합니다.
+
+| NAME   | DATETIME            |
+| ------ | ------------------- |
+| Shelly | 2015-01-29 15:01:00 |
+| Jackie | 2016-01-03 16:25:00 |
+| Benji  | 2016-04-19 13:28:00 |
+
+※ 입양을 가지 못한 동물이 3마리 이상인 경우만 입력으로 주어집니다.
 
 
 
